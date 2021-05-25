@@ -1,5 +1,5 @@
 
-# CDK Python project to connect to an RDS Database from a Lambda Function
+# CDK Python project to connect to an RDS Oracle Database from a Lambda Function
 
 Creation of two Lambda Layers to import external libraries to the Lambda Fuction. The directory structure should be like this:
 
