@@ -1,7 +1,22 @@
 
-# Welcome to your CDK Python project!
+# CDK Python project to connect to an RDS Database from a Lambda Function
 
-This is a blank project for Python development with CDK.
+Creation of two Lambda Layers to import external libraries to the Lambda Fuction. The directory structure should be like this:
+
+~~~
+layers
+| cx_Oracle
+    | python
+        | lib
+            | python3.8
+                | site-packages
+                    | <external dependencies>
+| oracle_client
+    | lib
+        | <external dependencies>
+~~~
+
+<br>
 
 The `cdk.json` file tells the CDK Toolkit how to execute your app.
 
@@ -54,5 +69,13 @@ command.
  * `cdk deploy`      deploy this stack to your default AWS account/region
  * `cdk diff`        compare deployed stack with current state
  * `cdk docs`        open CDK documentation
+
+## Useful links
+ 
+ * Creating a function with runtime dependencies: https://docs.aws.amazon.com/lambda/latest/dg/python-package-create.html#python-package-create-with-dependency
+ * Using AWS Lambda environment variables: https://docs.aws.amazon.com/lambda/latest/dg/configuration-envvars.html
+ * cx_Oracle 8 Installation: https://cx-oracle.readthedocs.io/en/latest/user_guide/installation.html
+ * AWS Lambda Construct Library: https://docs.aws.amazon.com/cdk/api/latest/python/aws_cdk.aws_lambda/README.html
+ * How to provision Lambda and Lambda Layer using CDK: https://dev.to/upupkenchoong/how-to-provision-lambda-and-lambda-layer-with-cdk-2ff4
 
 Enjoy!
