@@ -16,6 +16,8 @@ layers
         | <external dependencies>
 ~~~
 
+The Lambda Function code is located in the `functions` directory.
+
 <br>
 
 The `cdk.json` file tells the CDK Toolkit how to execute your app.
